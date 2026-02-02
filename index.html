@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="icon/all.min.css">
+        <title>TrendiFy E-commerce</title>
+    </head>
+    <body>
+         <nav>
+            <div class="navbar_container flex">
+                <div class="top_nav flex">
+                    <div class="location flex">
+                        <i class="fa-solid fa-mobile"></i>
+                        <span>01029563074</span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span> Our location</span>
+                    </div>
+                    <div class="great">
+                        <p>Get great devices up to 50% off</p>
+                    </div>
+                    <div class="mode flex">
+                        <div class="lang flex">
+                            <i class="fa-solid fa-earth-asia"></i>
+                            <span> English</span>
+                        </div>
+                        <div class="login flex">
+                            <i class="fa-regular fa-user"></i>
+                            <span>Log-in</span>
+                            <span>Sign-in</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mid_nav flex">
+                    <div class="logo">
+                        <p>Tren<span>diFy</span></p>
+                    </div>
+                    <div class="search flex">
+                        <input type="text" placeholder="Search Products..." name="" id="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="icon flex" >
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <i class="fa-solid fa-bars-staggered" id="lest" onclick=" mainOpen()"></i>
+                    </div>
+                </div>
+                <div class="navbar flex">
+                    <ul class="flex">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <p>
+                        <i class="fa-solid fa-headset"></i>
+                        Hotline 
+                        <span>1900 - 888</span>
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="main flex" id="main">
+            <i class="fa-solid fa-square-xmark" onclick="mainOpen()"></i>
+            <div class="link_main">
+                <div class="search flex">
+                    <input type="text" placeholder="Search Products..." name="" id="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <ul class="flex">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="icon_main flex">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        <header class="flex">
+            <div class="span">
+                <span id="Prev"><</span>
+                <span id="Next">></span>
+            </div>
+            <div class="header_container flex" id="slid1">
+                <div class="title flex">
+                    <b id="bold">Upcoming Offer</b>
+                    <h1 id="head1">
+                        Big Deals From
+                    </h1>
+                    <span id="span1">Manufacturer</span>
+                    <p id="para">Clothing, Shoes, Bags, Wallets...</p>
+                    <div class="button flex">
+                        <a href="" id="button">Shop Now</a>
+                    </div>
+                </div>
+                <div class="panner">
+                    <img src="images/hero-1.png" alt="" id="item1">
+                </div>
+            </div>
+            <div class="header_container flex" id="slid2">
+                <div class="title flex">
+                    <b >Upcoming Offer</b>
+                    <h1>
+                        Big Deals From
+                        <br>
+                        <span>Manufacturer</span>
+                    </h1>
+                    <p>Clothing, Shoes, Bags, Wallets...</p>
+                    <div class="button flex">
+                        <a href="">Shop Now</a>
+                    </div>
+                </div>
+                <div class="panner">
+                    <img src="images/hero-2.png" alt="">
+                </div>
+            </div>
+        </header>
+        <section class="flex">
+            <div class="features_container flex">
+                <div class="card flex">
+                    <img src="images/feature-1.png" alt="">
+                    <a href="">Free Shipping</a>
+                </div>
+                <div class="card flex">
+                    <img src="images/feature-2.png" alt="">
+                    <a href="">Online Order</a>
+                </div>
+                <div class="card flex">
+                    <img src="images/feature-3.png" alt="">
+                    <a href="">Save Money</a>
+                </div>
+                <div class="card flex">
+                    <img src="images/feature-4.png" alt="">
+                    <a href="">Promotions</a>
+                </div>
+                <div class="card flex">
+                    <img src="images/feature-5.png" alt="">
+                    <a href="">Happy Sell</a>
+                </div>
+                <div class="card flex">
+                    <img src="images/feature-6.png" alt="">
+                    <a href="">24/7 Support</a>
+                </div>
+            </div>
+        </section>
+        <section class="featured flex">
+            <div class="head_featured_container flex">
+                <div class="sections flex acts">
+                    <button id="act1" class="act">Featured</button>
+                    <button id="act2" class="act">Popular</button>
+                    <button id="act3" class="act">New Added</button>
+                </div>
+                <a href="">View More</a>
+            </div>
+            <div class="featured_container flex cards">
+                <div class="card flex card1" id="card">
+                    <div class="img">
+                        <img src="images/product-1-1.jpg" alt="">
+                        <img src="images/product-1-2.jpg" alt="">
+                        <a href=""class='flex'>
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-bag-shopping "></i>
+                        </a>
+                    </div>
+                    <div class="title_card flex">
+                        <p>Clothing</p>
+                        <a href="">Colorful Pattern <br>
+                            Shirts</a>
+                        <b>$238.85<del>$245.8</del></b>
+                    </div>
+                </div>
+                <div class="card flex card1" id="card2">
+                    <div class="img">
+                        <img src="images/product-2-1.jpg" alt="">
+                        <img src="images/product-2-2.jpg" alt="">
+                        <a href=""class='flex'>
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-bag-shopping "></i>
+                        </a>
+                    </div>
+                    <div class="title_card flex">
+                        <p>Clothing</p>
+                        <a href="">Fish Print Patched T-shirt</a>
+                        <b>$199.99<del>$249.99</del></b>
+                    </div>
+                </div>
+                <div class="card flex card1" id="card3">
+                    <div class="img">
+                        <img src="images/product-3-1.jpg" alt="">
+                        <img src="images/product-3-2.jpg" alt="">
+                        <a href=""class='flex'>
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-bag-shopping "></i>
+                        </a>
+                    </div>
+                    <div class="title_card flex">
+                        <p>Clothing</p>
+                        <a href="">Vintage Floral Print Dress</a>
+                        <b>$299.99<del>$349.99</del></b>
+                    </div>
+                </div>
+                <div class="card flex card1" id="card4">
+                    <div class="img">
+                        <img src="images/product-4-1.jpg" alt="">
+                        <img src="images/product-4-2.jpg" alt="">
+                        <a href=""class='flex'>
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-bag-shopping "></i>
+                        </a>
+                    </div>
+                    <div class="title_card flex">
+                        <p>Clothing</p>
+                        <a href="">Stripe Circle Print T-Shirt</a>
+                        <b>$149.99<del>$189.99</del></b>
+                    </div>
+                </div>
+            </div>
+            <div class="panner_featured flex">
+                <b>Repair Services</b>
+                <h2>
+                    We're an Apple
+                    <br>
+                    Authorised Service Provider
+                </h2>
+                <a href="" class="flex">learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+        <section class="categories ">
+            <div class="head_featured_container flex">
+                <div class="sections flex">
+                    <p id="act1"><span>Popular</span> Categories</p>
+                </div>
+            </div>
+            <div class="features_container flex">
+                <div class="card flex">
+                    <img src="images/category-1.jpg" alt="">
+                    <a href="">T-Shirt</a>
+                </div>
+                <div class="card flex">
+                    <img src="images/category-2.jpg" alt="">
+                    <a href="">Bags</a>
+                </div>
+                <div class="card flex">
+                    <img src="images/category-3.jpg" alt="">
+                    <a href="">Sandan</a>
+                </div>
+                <div class="card flex">
+                    <img src="images/category-4.jpg" alt="">
+                    <a href="">Scarf Cap </a>
+                </div>
+                <div class="card flex">
+                    <img src="images/category-5.jpg" alt="">
+                    <a href="">Shoes</a>
+                </div>
+                <div class="card flex">
+                    <img src="images/category-6.jpg" alt="">
+                    <a href="">Pillowcase </a>
+                </div>
+            </div>
+            <div class="shop_now flex">
+                <div class="box flex">
+                    <div class="cart">
+                        <b>Smart Offer</b>
+                        <h2>
+                            Save 20% on
+                            <br>
+                            Woman Bag
+                        </h2>
+                        <a href="">shop now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="cart">
+                        <b>Sale off</b>
+                        <h2>
+                            Great Summer
+                            <br>
+                            Collection
+                        </h2>
+                        <a href="">shop now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="cart">
+                        <b>New Arrivals</b>
+                        <h2>
+                            Shop Today’s
+                            <br>
+                            Deals & Offers
+                        </h2>
+                        <a href="">shop now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="sale flex ">
+                <div class="card">
+                    <div class="img">
+                        <span>sale</span>
+                        <img src="images/category-4.jpg" alt="">
+                        <img src="images/category-8.jpg" alt="">
+                    </div>
+                    <div class="title flex">
+                        <p>Sed dapibus orci</p>
+                        <div class="icon_sale">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$215.85<del>$235.8</del></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <span>Hot</span>
+                        <img src="images/product-2-1.jpg" alt="">
+                        <img src="images/product-2-2.jpg" alt="">
+                    </div>
+                    <div class="title flex">
+                        <p>Lorem ipsum dolor</p>
+                        <div class="icon_sale">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$238.85<del>$245.8</del></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <span style="background-color: red;">hot</span>
+                        <img src="images/product-7-1.jpg" alt="">
+                        <img src="images/product-7-2.jpg" alt="">
+                    </div>
+                    <div class="title flex">
+                        <p>Colorful Pattern Shirts</p>
+                        <div class="icon_sale">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$238.85<del>$245.8</del></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <span>new</span>
+                        <img src="images/product-4-1.jpg" alt="">
+                        <img src="images/product-4-2.jpg" alt="">
+                    </div>
+                    <div class="title flex">
+                        <p>Aliquam posuere</p>
+                        <div class="icon_sale">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$173.85<del>$185.8</del></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <span>-25%</span>
+                        <img src="images/product-9-1.jpg" alt="">
+                        <img src="images/product-9-2.jpg" alt="">
+                    </div>
+                    <div class="title flex">
+                        <p>Curabitur porta</p>
+                        <div class="icon_sale">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span>$1238.85<del>$1245.8</del></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Blog">
+            <div class="container_blog flex">
+                <div class="news flex">
+                    <div class="head_featured_container flex">
+                        <div class="sections flex">
+                            <p><span>Our</span>blogs</p>
+                        </div>
+                    </div>
+                    <div class="box_new">
+                        <div class="healthy flex">
+                            <div class="img_healthy">
+                                <img src="images/blog-1.jpg" alt="">
+                            </div>
+                            <div class="title_healthy">
+                                <span>Healthy</span>
+                                <p>Not even the coronavirus can derail 5G's global momentum</p>
+                                <a href="" class="flex">
+                                    <b>14 April 2022</b>
+                                    <span>12M Views</span>
+                                    <p>Read More</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_new">
+                        <div class="healthy flex">
+                            <div class="img_healthy">
+                                <img src="images/blog-2.jpg" alt="">
+                            </div>
+                            <div class="title_healthy">
+                                <span>Fashion</span>
+                                <p>Qualcomm is developing a Nintendo Switch-like console, report says</p>
+                                <a href="" class="flex">
+                                    <b>14 April 2022</b>
+                                    <span>12M Views</span>
+                                    <p>Read More</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_Offer flex">
+                    <div class="accessories flex">
+                        <b>Accessories</b>
+                        <p>Save 17% on Autumn Hat</p>
+                        <a href="">Shop Now<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="all_offer flex">
+                        <div class="card_offer flex">
+                            <b>Big Offer</b>
+                            <p>Save 20% on Women's socks</p>
+                            <a href="">Shop Now<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="card_offer flex">
+                            <b>Smart Offer</b>
+                            <p>Save 20% on Eardrop</p>
+                            <a href="">Shop Now<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panner_featured flex">
+                <b>Shop Today’s Deals</b>
+                <h2>
+                    Happy <span>Women's Day.</span> Big Sale Up to 40%
+                </h2>
+            </div>
+            <div class="container_deals ">
+                <div class="accessories flex">
+                    <b>Accessories</b>
+                    <p>Save 17% on All Items</p>
+                    <a href="">Shop Now<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="top ">
+                    <b>Deals & Outlet</b>
+                    <div class="box_product">
+                        <div class="product flex">
+                            <div class="img">
+                                <img src="images/deals-1.jpg" alt="">
+                            </div>
+                            <div class="title_product">
+                                <p>Vintage Floral Print Dress</p>
+                                <span>$238.85<del>$245.8</del></span>
+                            </div>
+                        </div>
+                        <div class="product flex">
+                            <div class="img">
+                                <img src="images/deals-2.jpg" alt="">
+                            </div>
+                            <div class="title_product">
+                                <p>Multi-color Stripe Circle Print T-Shirt</p>
+                                <span>$238.85<del>$245.8</del></span>
+                            </div>
+                        </div>
+                        <div class="product flex">
+                            <div class="img">
+                                <img src="images/deals-3.jpg" alt="">
+                            </div>
+                            <div class="title_product">
+                                <p>Geometric Printed Long Sleeve Blosue</p>
+                                <span>$238.85<del>$245.8</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top ">
+                    <b>Deals & Outlet</b>
+                    <div class="box_product">
+                        <div class="product flex">
+                            <div class="img">
+                                <img src="images/category-4.jpg" alt="">
+                            </div>
+                            <div class="title_product">
+                                <p>Print Patchwork Maxi Dress</p>
+                                <span>$238.85<del>$245.8</del></span>
+                            </div>
+                        </div>
+                        <div class="product flex">
+                            <div class="img">
+                                <img src="images/product-4-1.jpg" alt="">
+                            </div>
+                            <div class="title_product">
+                                <p>Daisy Floral Print Straps Jumpsuit</p>
+                                <span>$238.85<del>$245.8</del></span>
+                            </div>
+                        </div>
+                        <div class="product flex">
+                            <div class="img">
+                                <img src="images/top-selling-3.jpg" alt="">
+                            </div>
+                            <div class="title_product">
+                                <p>Floral Print Casual Cotton Dress</p>
+                                <span>$238.85<del>$245.8</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top ">
+                    <b>Deals & Outlet</b>
+                    <div class="box_product">
+                        <div class="product flex">
+                            <div class="img">
+                                <img src="images/hot-releas-1.jpg" alt="">
+                            </div>
+                            <div class="title_product">
+                                <p>Ruffled Solid Long Sleeve Blouse</p>
+                                <span>$238.85<del>$245.8</del></span>
+                            </div>
+                        </div>
+                        <div class="product flex">
+                            <div class="img">
+                                <img src="images/hot-releas-2.jpg" alt="">
+                            </div>
+                            <div class="title_product">
+                                <p>Ruffled Solid Long Sleeve Blouse</p>
+                                <span>$238.85<del>$245.8</del></span>
+                            </div>
+                        </div>
+                        <div class="product flex">
+                            <div class="img">
+                                <img src="images/hot-releas-3.jpg" alt="">
+                            </div>
+                            <div class="title_product">
+                                <p>Multi-color Print V-neck T-Shirt</p>
+                                <span>$238.85<del>$245.8</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section class="sign flex" >
+            <p><i class="fa-regular fa-envelope"></i> Sign up to Newsletter</p>
+            <b>...and receive $25 coupon for first shopping.</b>
+            <div class="up">
+                <input type="text" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="cont">
+                    <div class="logo">
+                        <p>Tren<span>diFy</span></p>
+                    </div>
+                    <div class="contact">
+                        <h6>Contact</h6>
+                        <p><span>Address:</span> 562 Wellington Road, Street 32, San Francisco</p>
+                        <p><span>Phone:</span> +01 2222 365 /(+91) 01 2345 6789</p>
+                        <p><span>Hours:</span> 10:00 - 18:00, Mon - Sat</p>
+                        <div class="icon_contact">
+                            <h6>Follow Us</h6>
+                            <div class="icon_foot">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-pinterest-p"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="link_foot">
+                    <h5>About</h5>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Delivery Information</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="link_foot">
+                    <h5>My Account</h5>
+                    <ul>
+                        <li><a href="">Sign In</a></li>
+                        <li><a href="">View Cart</a></li>
+                        <li><a href="">My Wishlist</a></li>
+                        <li><a href="">Track My Order</a></li>
+                        <li><a href="">Help</a></li>
+                        <li><a href="">Order</a></li>
+                    </ul>
+                </div>
+                <div class="app">
+                    <h5>Install App</h5>
+                    <p>From App Store or Google Play</p>
+                    <div class="stor">
+                        <img src="images/app-store.jpg" alt="">
+                        <img src="images/google-play.jpg" alt="">
+                    </div>
+                    <p>Secured Payment Gateways</p>
+                    <img src="images/payment-method.png" alt="">
+                </div>   
+            </div>
+            <div class="copy flex">
+                <p>© copyright 2026. All Rights Reserved By <a href="">ADHAM YASSER</a></p>
+                <div class="ter">
+                    <a href="">Terms of Use</a>
+                    <a href="">privacy policy</a>
+                </div>
+            </div>
+        </footer>
+        <script src="js/main_pro.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/main_shop.js"></script>
+    </body>
+</html>

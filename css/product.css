@@ -1,0 +1,224 @@
+
+:root {
+    --Regular-color:#fc0820;
+    --secondary-color:#088178;
+    --font-color:#63a2c1;
+    --font-nav: #6b635c;
+    --font-head :#212529;
+    --back-button-color:#fbcbcd;
+    --back1-color:#cdebbc;
+    --back2-color:#cdd4f8;
+    --back3-color:#f6dbf6;
+    --back-card1-color:#faf3e6;
+    --back-card2-color:#f9ecfb;
+    --back-card3-color:#dfe7f5;
+    --back-img-color:#f1f1f1;
+    --Regular-font:'Regular_Poppins',sans-serif;
+    --SemiBold-font:'SemiBold_Poppins',sans-serif;
+    --Bold-font:'Bold_Poppins',sans-serif;
+}
+
+
+.container_product {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 20px;
+}
+
+.image:hover .main_img{
+    left: 20px;
+
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #f1f1f1;
+
+}
+
+.main_img {
+    width: 70px;
+    height: calc((70px + 30px ) * 4);
+    gap: 10px;
+    position: absolute;
+    bottom: 50%;
+    left: -100px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(50%);
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.main_img img{
+    transition: 0.5s;
+}
+
+.main_img img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.product_details  h1 {
+    color: var(--font-head);
+}
+
+.product_details  > p:nth-child(2) {
+    padding: 15px 0;
+}
+
+.product_details > p:nth-child(2) span{
+    color: var(--secondary-color);
+}
+
+.product_details > p:nth-child(3) {
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+}
+
+.product_details > p:nth-child(3) span:nth-child(1) {
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+.product_details > p:nth-child(3) del {
+    text-decoration: line-through;
+    color: var(--font-nav);
+}
+
+.product_details > p:nth-child(3) span:nth-child(3) {
+    color: red;
+}
+
+.product_details > p:nth-child(4) {
+    padding: 10px 0;
+    color: var(--font-nav);
+}
+
+.product_details ul li i {
+    color: var(--secondary-color);
+}
+
+.product_details .size {
+    justify-content: start;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.product_details .size p{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.product_details .size p:hover{
+    background-color: var(--font-head);
+    color: #fff;
+}
+
+.product_details .quantity {
+    justify-content: start;
+    margin: 20px 0;
+}
+
+.product_details .quantity button{
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+}
+
+.product_details .quantity p{
+    border: 2px solid #ccc;
+    width: 50px;
+    height: 30px; 
+    border-right: none;  
+    border-left: none;  
+    text-align: center;
+}
+
+.product_details > button:nth-child(8) {
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    width:50%;
+    color: #fff;
+    border:none;
+    margin-bottom: 20px ;
+    cursor: pointer;
+}
+
+.product_details > p:nth-child(10)  span{
+    color: var(--secondary-color);
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #ccc;
+    padding: 20px 30px;
+}
+
+table tr {
+    width: 100%;
+    flex-wrap: wrap;
+    border: 2px solid #ccc;
+    border-right: none;
+    border-left: none;
+}
+
+table tbody {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-right:none;
+    border-left:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+}
+
+table tbody td{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+table tbody td button{
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+table tbody td button:hover{
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    box-shadow: 0 0 5px 0 red;
+
+}

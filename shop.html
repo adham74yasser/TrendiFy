@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/shop.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="icon/all.min.css">
+        <title>TrendiFy E-commerce</title>
+    </head>
+    <body>
+         <nav>
+            <div class="navbar_container flex">
+                <div class="top_nav flex">
+                    <div class="location flex">
+                        <i class="fa-solid fa-mobile"></i>
+                        <span>01029563074</span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span> Our location</span>
+                    </div>
+                    <div class="great">
+                        <p>Get great devices up to 50% off</p>
+                    </div>
+                    <div class="mode flex">
+                        <div class="lang flex">
+                            <i class="fa-solid fa-earth-asia"></i>
+                            <span> English</span>
+                        </div>
+                        <div class="login flex">
+                            <i class="fa-regular fa-user"></i>
+                            <span>Log-in</span>
+                            <span>Sign-in</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mid_nav flex">
+                    <div class="logo">
+                        <p>Tren<span>diFy</span></p>
+                    </div>
+                    <div class="search flex">
+                        <input type="text" placeholder="Search Products..." name="" id="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="icon flex" >
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <i class="fa-solid fa-bars-staggered" id="lest" onclick=" mainOpen()"></i>
+                    </div>
+                </div>
+                <div class="navbar flex">
+                    <ul class="flex">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <p>
+                        <i class="fa-solid fa-headset"></i>
+                        Hotline 
+                        <span>1900 - 888</span>
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="main flex" id="main">
+            <i class="fa-solid fa-square-xmark" onclick="mainOpen()"></i>
+            <div class="link_main">
+                <div class="search flex">
+                    <input type="text" placeholder="Search Products..." name="" id="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <ul class="flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="icon_main flex">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        <header class="page flex">
+            <a href="index.html">Home</a>
+            <p><span>></span>shop</p>
+        </header>
+        <section class="show">
+            <div class="head_show flex">
+                <p>We found<span id="item">688</span>items for you!</p>
+                <div class="catg flex">
+                    <a href="" id="show">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        Show : 50
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        Sort by : Featured
+                    </a>
+                </div>
+            </div>
+            <div class="featured_container flex cards" id="container">
+            </div>
+        </section>
+        <section class="sign flex" >
+            <p><i class="fa-regular fa-envelope"></i> Sign up to Newsletter</p>
+            <b>...and receive $25 coupon for first shopping.</b>
+            <div class="up">
+                <input type="text" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="cont">
+                    <div class="logo">
+                        <p>Tren<span>diFy</span></p>
+                    </div>
+                    <div class="contact">
+                        <h6>Contact</h6>
+                        <p><span>Address:</span> 562 Wellington Road, Street 32, San Francisco</p>
+                        <p><span>Phone:</span> +01 2222 365 /(+91) 01 2345 6789</p>
+                        <p><span>Hours:</span> 10:00 - 18:00, Mon - Sat</p>
+                        <div class="icon_contact">
+                            <h6>Follow Us</h6>
+                            <div class="icon_foot">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-pinterest-p"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="link_foot">
+                    <h5>About</h5>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Delivery Information</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="link_foot">
+                    <h5>My Account</h5>
+                    <ul>
+                        <li><a href="">Sign In</a></li>
+                        <li><a href="">View Cart</a></li>
+                        <li><a href="">My Wishlist</a></li>
+                        <li><a href="">Track My Order</a></li>
+                        <li><a href="">Help</a></li>
+                        <li><a href="">Order</a></li>
+                    </ul>
+                </div>
+                <div class="app">
+                    <h5>Install App</h5>
+                    <p>From App Store or Google Play</p>
+                    <div class="stor">
+                        <img src="images/app-store.jpg" alt="">
+                        <img src="images/google-play.jpg" alt="">
+                    </div>
+                    <p>Secured Payment Gateways</p>
+                    <img src="images/payment-method.png" alt="">
+                </div>   
+            </div>
+            <div class="copy flex">
+                <p>© copyright 2026. All Rights Reserved By <a href="">ADHAM YASSER</a></p>
+                <div class="ter">
+                    <a href="">Terms of Use</a>
+                    <a href="">privacy policy</a>
+                </div>
+            </div>
+        </footer>
+        <script src="js/main_shop.js"></script>
+        <script src="js/main_pro.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

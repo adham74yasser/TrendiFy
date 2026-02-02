@@ -1,0 +1,48 @@
+.page {
+    background-color:#f7f8f9;
+    padding: 20px 100px;
+    margin-top: 30px;
+    justify-content: start;
+}
+
+.page a {
+    color: var(--font-head);
+    font-family: var(--Bold-font);
+}
+
+.page span {
+    margin: 0 10px;
+}
+
+.page p {
+    color: var(--font-nav);
+}
+
+/* start sec show */
+.head_show {
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.head_show span{
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-family: var(--Bold-font);
+    padding: 5px;
+}
+
+.catg {
+    gap: 10px;
+}
+
+.catg a i{
+    margin-right: 10px;
+}
+.catg a{
+    background-color: #f7f8f9;
+    color: var(--font-nav);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid var(--font-nav);
+}
+/* end sec show */
