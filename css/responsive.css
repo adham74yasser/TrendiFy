@@ -320,6 +320,12 @@
     .panner_featured a {
         width: 100%;
     }
+
+    .head_featured_container .sections button {
+        font-size: 10px;
+    }
+
+
     /* end features_container */
         /* start categories  */
     .box {
