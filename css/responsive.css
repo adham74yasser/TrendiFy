@@ -321,11 +321,10 @@
         width: 100%;
     }
 
-    .head_featured_container .sections button {
+    .head_featured_container .sections button,
+    .head_featured_container > a  {
         font-size: 10px;
     }
-
-
     /* end features_container */
         /* start categories  */
     .box {
