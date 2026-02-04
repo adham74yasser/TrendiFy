@@ -26,56 +26,23 @@ let teb_body = document.getElementById('teb_body')
 
 
 let data = []
-if (btnCart && imgSrc && price && teb_body) {
+if (btnCart && imgSrc && price  ) {
     btnCart.onclick = function() {
     let imag = imgSrc.src
     let dic =  parseInt(price.innerText) * parseInt(num.innerText)
     let product = {
         img :imag,
-        price : price.innerText,
-        num : num.innerText,
+        price : parseInt(price.innerText),
+        num : parseInt(num.innerText),
         total : dic
     }
 
+    let data = JSON.parse(localStorage.getItem("cart")) || []
     data.push(product)
+    localStorage.setItem("cart", JSON.stringify(data))
     detaiLS()
-}
-
-
-function detaiLS() {
-    let res = ''
-    for(let i = 0 ; i < data.length ; i++) {
-        res += `
-            <tr class="flex">
-                <td><img src="${data[i].img}" alt=""></td>
-                <td>$${data[i].price}</td>
-                <td>${data[i].num}</td>
-                <td>$${data[i].total}</td>
-                <td><button onclick="deleteItem(this , ${i})">X</button></td>
-            </tr>
-        `
-    }
-
-    teb_body.innerHTML = res
-    console.log(res)
-}
-
-
-function  deleteItem(button ,index) {
-    let row = button.parentElement.parentElement ;
-    row.remove();
-    data.splice(index, 1);
-
-    if (data.length === 0) {
-        teb_body.innerHTML = `Your cart is empty.`;
-    }
 
 }
-
-if(data.length === 0){
-    teb_body.innerText = 'Your cart is empty.'
-}
-
 
 function active(activeImg) {
    imgSrc.src = activeImg.src         
@@ -102,6 +69,9 @@ if (imagSrc) {
     img_3.src = imagSrc_3;
     img_4.src = imagSrc_4;
 }
- 
+//  
 }
-// 
+
+//
+
+

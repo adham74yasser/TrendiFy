@@ -151,7 +151,7 @@
     text-align: center;
 }
 
-.product_details > button:nth-child(8) {
+.product_details > a:nth-child(8) {
     background-color: var(--secondary-color);
     padding: 10px 20px;
     width:50%;
@@ -159,6 +159,10 @@
     border:none;
     margin-bottom: 20px ;
     cursor: pointer;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .product_details > p:nth-child(10)  span{
@@ -222,3 +226,51 @@ table tbody td button:hover{
     box-shadow: 0 0 5px 0 red;
 
 }
+
+/*start sec  Cart_totals */
+.Cart_totals {
+    border:2px solid var(--secondary-color);
+    padding: 20px;
+    margin:  20px 100px;
+}
+
+.box_proceed h1 {
+    color: var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+
+.Subtotal_product
+,.Subtotal
+,.Subtotal_price {
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+}
+
+.Cart_totals button {
+    width: 100%;
+    padding: 10px ;
+    margin-top: 50px;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 18px;
+    font-family: var(--Bold-font);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Cart_totals button:hover {
+    background-color:transparent;
+    color: var(--secondary-color);
+    transform: scale(1.01);
+}
+
+#pro_tot 
+,#pri_tot {
+    color: var(--secondary-color);
+    font-family: var(--Bold-font);
+    font-size: 20px;
+}
+
+/*end sec  Cart_totals */

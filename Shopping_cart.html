@@ -93,57 +93,37 @@
             <p><span>></span>Shop</p>
             <p><span>></span>Product</p>
         </header>
-        <section class="product" >
-            <div class="container_product">
-                <div class="show_img">
-                    <div class="image" >
-                        <img src="" alt="" id="imgSrc">
-                        <div class="main_img flex">
-                            <img src="images/image-product/Gemini_Generated_Image_7h5ugv7h5ugv7h5u.png" onclick="active(this)" id="img_1" alt="">
-                            <img src="images/image-product/Gemini_Generated_Image_se7xv0se7xv0se7x.png" onclick="active(this)" id="img_2" alt="">
-                            <img src="images/image-product/Gemini_Generated_Image_tj6hqktj6hqktj6h.png" onclick="active(this)" id="img_3" alt="">
-                            <img src="images/image-product/Gemini_Generated_Image_wg8zrjwg8zrjwg8z.png" onclick="active(this)" id="img_4" alt="">
-                        </div>
-                    </div>
+        <section class="table">
+            <table>
+                <thead class="flex">
+                    <tr class="flex">
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="teb_body">
+                </tbody>
+            </table>
+        </section>
+        <section class="Cart_totals">
+            <div class="box_proceed">
+                <h2>Cart Totals</h2>
+                <div class="Subtotal_product flex">
+                    <p>Cart Subtotal</p>
+                    <p id="pro_tot">0</p>
                 </div>
-                <div class="product_details">
-                    <h1>Fish Print Patched T-shirt</h1>
-                    <p>Brands : <span> ADHAM</span></p>
-                    <p>
-                        <span id="price">199.99</span>
-                        <del id="dic">$200.00</del>
-                        <span id="offer">25% Off</span>
-                    </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Voluptatum, accusantium!</p>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-circle-check"></i>
-                             1 Year AL Jazeera Brand Warranty
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-circle-check"></i>
-                             30 Day Return Policy
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-circle-check"></i>
-                             Cash on Delivery available
-                        </li>
-                    </ul>
-                    <div class="size flex">
-                        <p>s</p>
-                        <p>m</p>
-                        <p>l</p>
-                        <p>xl</p>
-                    </div>
-                    <div class="quantity flex">
-                        <button id="btn_1">-</button>
-                        <p id="num">1</p>
-                        <button id="btn_2">+</button>
-                    </div>
-                    <a href="Shopping_cart.html" id="btnCart">Add to cart</a>
-                    <p>Tags: Cloth, Women, Dress</p>
-                    <p>Availability : <span>8 Items In Stock</span></p>
+                <div class="Subtotal flex">
+                    <p>Shipping</p>
+                    <p>Free Shipping</p>
                 </div>
+                <div class="Subtotal_price flex">
+                    <p>Total</p>
+                    <p id="pri_tot">0.00</p>
+                </div>
+                <button > Proceed To Checkout </button>
             </div>
         </section>
         <section class="sign flex" >
@@ -218,6 +198,7 @@
                 </div>
             </div>
         </footer>
+        <script src="js/cart.js" ></script>
         <script src="js/main.js"></script>
         <script src="js/main_pro.js" ></script>
         <script src="js/main_shop.js"></script>
